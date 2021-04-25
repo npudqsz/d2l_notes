@@ -110,7 +110,7 @@ if __name__ == '__main__':
             num_loss += l * y.numel()
             num_correct += accuracy(y_hat, y)
             num_all += y.numel()
-        loss_train = float(num_loss / num_all)      # loss for traing dataset
+        loss_train = float(num_loss / num_all)      # loss for training dataset
         acc_train = float(num_correct / num_all)    # accuracy for training dataset
         acc_test = eval_accuray(net, test_iter)     # accuracy for test dataset
         print(f'epoch : {epoch}, train loss : {loss_train:.3f}, ' + 
